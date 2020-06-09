@@ -1,0 +1,7 @@
+Options -Indexes
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^.*/BOL/.*$
+RewriteCond %{REQUEST_URI} ^.*/DAL/.*$
+RewriteCond %{REQUEST_URI} ^.*/DAO/.*$
+RewriteCond %{REQUEST_URI} ^.*/DESIGNER/.*$
+RewriteRule .*$ https://www.ugelchincha.gob.pe/ResolucionesApp/123123

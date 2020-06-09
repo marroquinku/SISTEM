@@ -1,0 +1,284 @@
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+}
+
+/**/
+.table > tbody > tr > td,.table > thead > tr > td{
+    vertical-align: middle;
+    cursor: pointer;
+}
+.lista-res .table tbody {
+  display: block;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.lista-res>.table>thead,
+.lista-res>.table>tbody>tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/**/
+
+.sidebar {
+    width: 20%;
+    background-color: #263544;
+    transition: all 0.5s ease-in-out;
+    float: left;
+}
+
+aside.contenedor-derecha {
+    float: left;
+    width: 79%;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 10px;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+/**/
+.user-panel {
+    display: table;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px 10px 20px 10px;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.user-panel>.image>img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+}
+.user-panel>.info {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+    left: 55px;
+}
+.user-panel>.info>p {
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.user-panel>.info, .user-panel>.info>a {
+    color: #fff;
+}
+.user-panel>.info>a {
+    text-decoration: none;
+}
+.user-panel>.info>a>i{
+    color: #34ff34;
+}
+.text-success {
+    color: #5cb85c!important;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar li a, .sidebar li a.collapsed.active {
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+    border-left: 0px solid #dedede;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+
+.menu-op-adm>li>a>i{
+   padding-right: 4px;
+}
+
+.menu-close-open {
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.menu-close-open a{
+  color: #fff;
+}
+
+.sidebar.fliph .menu-close-open {
+    padding-right: 0px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.sidebar li a .nav-label, .sidebar li a .nav-label+span {
+    transition: all 0.5s ease-in-out;
+}
+.sidebar li a:hover {
+    background-color: #263240;
+    border-left: 3px solid #42a5f5;
+}
+.sidebar li a.active {
+    background-color: #263240;
+    border-left: 3px solid #0e982a;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar li a i {
+    padding: 5px 10px 5px 5px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.sidebar.fliph li a .nav-label, .sidebar.fliph li a .nav-label+span {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar.fliph .user-panel .info{
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo-ugel {
+    height: 35px;
+    width: 166px;
+    padding: 0;
+    margin: 9px;
+}
+.divider-vertical {
+    height: 40px;
+    margin: 5px 10px 5px 10px;
+    border-left: 1px solid #9ea79e;
+    padding: 1px 0px 0px 0px;
+}
+
+
+.navbar-collapse.in.menu-op-adm.divider-vertical{
+  display: none;
+}
+/**/
+
+.menu-izquierdo {
+    height: 100%;
+    margin-right: 8px;
+}
+
+.sidebar.fliph {
+    width: 55px;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar.fliph li {
+    position: relative;
+}
+
+/**/
+.navbar-default {
+  background-color: #263544;
+  border-color: #263544;
+  border-radius: 0px;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fdfdfd;
+  background-color: #282d3a;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fdfdfd;
+  background-color: #282d3a;
+}
+.navbar-default .navbar-toggle {
+  border-color: #282d3a;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #282d3a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #fdfdfd;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fdfdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fdfdfd;
+    background-color: #282d3a;
+  }
+}
+
+@media (max-width: 767px) {
+  #content-card-admi {
+    padding: 12px 10px 5px 19px;
+  }
+  .sidebar {
+      width: 70%;
+      background-color: #263544;
+      transition: all 0.5s ease-in-out;
+      float: left;
+      position: absolute;
+      z-index: 10;
+  }
+  aside.contenedor-derecha {
+      float: left;
+      width: 86.13%;
+      padding-top: 0px;
+      padding-left: 22px;
+      padding-right: 22px;
+      margin-left: 55px;
+  }
+}
